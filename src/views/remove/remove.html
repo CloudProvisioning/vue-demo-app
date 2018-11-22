@@ -1,0 +1,11 @@
+<section class="remove">
+    <h1>Remove data from database</h1>
+    <br>
+    <h5>Please, enter how many entries you want to remove:</h5>
+    <br>
+    <el-input-number v-model="count" :min="1"></el-input-number>
+    <br>
+    <br>
+    <br>
+    <el-button type="primary" @click="onRemoveClick" :loading="isProcessing">Remove data</el-button>
+  </section>

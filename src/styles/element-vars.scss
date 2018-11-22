@@ -1,0 +1,10 @@
+@import 'vars';
+
+/* theme color */
+$--color-primary: $primary-color;
+$--color-black: $text-color-dark;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

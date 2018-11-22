@@ -1,0 +1,19 @@
+@import 'vars';
+
+#app {
+    font-family: 'Consolas';
+    color: $text-color-dark;
+    text-align: center;
+}
+
+.view-block {
+    padding: 20px;
+}
+
+.color-primary {
+    color: $primary-color;
+}
+
+.color-alert {
+    color: $alert-color;
+}

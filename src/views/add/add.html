@@ -1,0 +1,11 @@
+<section class="add">
+  <h1>Add data to database</h1>
+  <br>
+  <h5>Please, enter how many entries you want to add:</h5>
+  <br>
+  <el-input-number v-model="count" :min="1"></el-input-number>
+  <br>
+  <br>
+  <br>
+  <el-button type="primary" @click="onAddClick" :loading="isProcessing">Add data</el-button>
+</section>
