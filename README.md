@@ -15,12 +15,17 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
 ### Lints and fixes files
 ```
 npm run lint
+```
+
+### IMPORTANT! Specify backend (api server) url
+### go to src/services/data-service.js and change serverUrl variable to 'http://<your-cluster-ip>:31651'
+
+### How to build and push docker image
+```
+sudo docker build -t vue-demo-app .
+sudo docker tag vue-demo-app <your-docker-hub-username>/vue-demo-app:latest
+sudo docker push <your-docker-hub-username>/vue-demo-app:latest
 ```
