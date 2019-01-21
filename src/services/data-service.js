@@ -3,7 +3,7 @@ import Axios from 'axios'
 export default class DataService {
 
     // HARDCODED LINK TO BACKEND API!
-    serverUrl = 'http://192.168.201.51:31651'
+    serverUrl = 'http://1.1.1.1:80'
 
     getData() {
         return Axios.get(this.serverUrl + '/data');

@@ -1,9 +1,11 @@
-FROM nginx:alpine
+FROM danday74/nginx-lua
 
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /nginx/conf/nginx.conf
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /nginx/html
 
 COPY dist/ .
+
+COPY init-backend-entry.sh /
 
 EXPOSE 80
